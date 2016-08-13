@@ -1,4 +1,4 @@
-package cn.com.asm;
+package cn.com.asm.hello;
 
 import org.objectweb.asm.*;
 

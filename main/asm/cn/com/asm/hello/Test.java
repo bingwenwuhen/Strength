@@ -1,4 +1,4 @@
-package cn.com.asm;
+package cn.com.asm.hello;
 
 /**
  * Created by Administrator on 2016/8/3.
