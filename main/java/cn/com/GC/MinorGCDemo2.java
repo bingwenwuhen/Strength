@@ -14,7 +14,7 @@ public class MinorGCDemo2 {
      */
     public static void testPretenureSizeThreshold() {
         byte[] allocation;
-        allocation = new byte[4 * _1MB];    //直接分配在老年代中
+        allocation = new byte[8 * _1MB];    //直接分配在老年代中
     }
 
     public static void main(String[] args) {
