@@ -10,6 +10,11 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>thrift</module>
+        <module>serialize/Hessian</module>
+        <module>serialize/kryo/jersey-kryo</module>
+        <module>serialize/BuiltIn</module>
+        <module>serialize/kryo/Kryo-Serialize</module>
+        <module>serialize/kryo/springJredisCache</module>
     </modules>
 
     <dependencies>
@@ -54,6 +59,11 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.16.10</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>19.0</version>
         </dependency>
 
     </dependencies>

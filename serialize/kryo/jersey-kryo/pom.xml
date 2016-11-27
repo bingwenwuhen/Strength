@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>Strength</artifactId>
+        <groupId>cn.com</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>jersey-kryo</artifactId>
+    <packaging>war</packaging>
+    <name>jersey :: kryo</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jaxrs.version>2.0.1</jaxrs.version>
+        <jersey.version>2.18</jersey.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.glassfish.jersey.containers</groupId>
+            <artifactId>jersey-container-servlet</artifactId>
+            <version>${jersey.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.containers</groupId>
+            <artifactId>jersey-container-grizzly2-http</artifactId>
+            <version>${jersey.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.media</groupId>
+            <artifactId>jersey-media-kryo</artifactId>
+            <version>${jersey.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.glassfish.jersey.test-framework.providers</groupId>
+            <artifactId>jersey-test-framework-provider-grizzly2</artifactId>
+            <scope>test</scope>
+            <version>${jersey.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <!-- Direct execution of already built application using Grizzly HTTP Container:
+                   - mvn exec:java
+                   - You can enable FINEST logging using logging.properties:
+                   - mvn exec:java -Djava.util.logging.config.file=target/test-classes/logging.properties
+                  -->
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>cn.com.jersey.kryo.Main</mainClass>
+                </configuration>
+            </plugin>
+            <plugin>
+                <!-- Run built WAR application in Jetty container:
+                   - mvn jetty:run-war
+                   - You can enable FINEST logging using logging.properties:
+                   - mvn jetty:run-war -Djava.util.logging.config.file=target/test-classes/logging.properties
+                  -->
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>java.net.snapshot</id>
+            <url>https://maven.java.net/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
+</project>
