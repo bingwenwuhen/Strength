@@ -1,4 +1,4 @@
-package cn.com.project.pojo;
+package cn.com.pojo;
 
 import lombok.Data;
 

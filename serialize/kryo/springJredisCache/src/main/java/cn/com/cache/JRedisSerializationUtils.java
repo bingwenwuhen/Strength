@@ -23,9 +23,9 @@ import java.util.Collections;
 import java.util.GregorianCalendar;
 
 /**
- * @author bingwen </br>
- *         Date:14-1-9 </br>
- *         Time:下午4:00 </br>
+ * @author bingwen
+ *         Date:14-1-9
+ *         Time:下午4:00
  *         Comment： 对象序列化工具类    序列化方案基于 FST - Fast Serialization
  *         https://github.com/flapdoodle-oss/de.flapdoodle.fast-serialization
  *         <p/>
@@ -475,11 +475,6 @@ public class JRedisSerializationUtils {
 
 
     //jdk原生序列换方案
-
-    /**
-     * @param obj
-     * @return
-     */
     @Deprecated
     public static byte[] jserialize(Object obj) {
         ObjectOutputStream oos = null;
@@ -501,10 +496,7 @@ public class JRedisSerializationUtils {
         }
     }
 
-    /**
-     * @param bits
-     * @return
-     */
+
     @Deprecated
     public static Object jdeserialize(byte[] bits) {
         ObjectInputStream ois = null;

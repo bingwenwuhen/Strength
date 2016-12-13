@@ -1,6 +1,6 @@
-package cn.com.project.pojo;
+package cn.com.pojo;
 
-import cn.com.project.exception.ResponseCode;
+import cn.com.exception.ResponseCode;
 import lombok.Data;
 
 import java.io.Serializable;

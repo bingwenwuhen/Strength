@@ -1,7 +1,7 @@
-package cn.com.project.utils;
+package cn.com.utils;
 
-import cn.com.project.exception.BizException;
-import cn.com.project.exception.ResponseCode;
+import cn.com.exception.BizException;
+import cn.com.exception.ResponseCode;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

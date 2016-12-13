@@ -1,4 +1,4 @@
-package cn.com.project.exception;
+package cn.com.exception;
 
 /**
  * Created by xiaxuan on 16/8/30.

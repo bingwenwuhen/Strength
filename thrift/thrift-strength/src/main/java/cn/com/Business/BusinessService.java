@@ -1,7 +1,7 @@
-package cn.com.project.Business;
+package cn.com.Business;
 
-import cn.com.project.exception.BizException;
-import cn.com.project.pojo.AbstractPojo;
+import cn.com.exception.BizException;
+import cn.com.pojo.AbstractPojo;
 import net.sf.json.JSONObject;
 
 /**

@@ -9,12 +9,13 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>thrift</module>
+        <module>thrift/thriftProject</module>
         <module>serialize/Hessian</module>
         <module>serialize/kryo/jersey-kryo</module>
         <module>serialize/BuiltIn</module>
         <module>serialize/kryo/Kryo-Serialize</module>
         <module>serialize/kryo/springJredisCache</module>
+        <module>thrift/thrift-strength</module>
     </modules>
 
     <dependencies>

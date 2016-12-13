@@ -1,8 +1,8 @@
-package cn.com.project.impl;
+package cn.com.impl;
 
-import cn.com.project.Business.BusinessService;
-import cn.com.project.exception.BizException;
-import cn.com.project.pojo.UserPojo;
+import cn.com.Business.BusinessService;
+import cn.com.exception.BizException;
+import cn.com.pojo.UserPojo;
 import net.sf.json.JSONObject;
 
 /**

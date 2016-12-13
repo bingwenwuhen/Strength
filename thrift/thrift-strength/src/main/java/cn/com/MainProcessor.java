@@ -1,10 +1,8 @@
-package cn.com.project;
+package cn.com;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.log4j.BasicConfigurator;
-
-import java.util.Set;
 
 /**
  * Created by xiaxuan on 16/8/26.

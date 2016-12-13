@@ -1,4 +1,4 @@
-package cn.com.project.pojo;
+package cn.com.pojo;
 
 /**
  * 实体层的最顶层的抽象实体对象

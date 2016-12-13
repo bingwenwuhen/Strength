@@ -1,4 +1,4 @@
-package cn.com.project.exception;
+package cn.com.exception;
 
 import lombok.Data;
 
